@@ -24,6 +24,9 @@ function checkPalindrom(string) {
   }
 }
 
+checkStrLenght('hdhxhxh', 10);
+checkPalindrom('di ana');
+
 // Test
 // console.log(checkStrLenght('hdhxhxh', 10));
 // console.log(checkPalindrom('di ana'));
