@@ -1,9 +1,8 @@
 function checkStrLenght(string, maxLength) {
   if (string.length <= maxLength) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 function checkPalindrom(string) {
@@ -19,9 +18,9 @@ function checkPalindrom(string) {
 
   if (newString === normString) {
     return true;
-  } else {
-    return false;
   }
+
+  return false;
 }
 
 checkStrLenght('hdhxhxh', 10);
