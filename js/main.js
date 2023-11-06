@@ -39,7 +39,7 @@ function generateRandomMessage(moreMessage) {
 }
 
 function generateComment(numberOfComment) {
-  let comments = [];
+  const comments = [];
   for (let i = 0; i < numberOfComment; i++) {
     lastCommentId++;
     const avatarRandom = randomNumberMinMax(1, 6);
@@ -62,14 +62,15 @@ function generatePhoto() {
     description: photoDecription[randomNumberMinMax(0, photoDecription.length - 1)],
     like: randomNumberMinMax(15, 200),
     comments: generateComment(randomNumberMinMax(0, 30))
-  }
+  };
 }
 
 function generatePhotos(numberOfPhotos) {
-  let photos = [];
+  const photos = [];
   for (let i = 0; i < numberOfPhotos; i++) {
     photos.push(generatePhoto());
   }
   return photos;
 }
-// console.log(generatePhotos(25));
+
+generatePhotos(25);
